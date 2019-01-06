@@ -1,0 +1,210 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemLink}[3]{
+  \item\small{
+   % \textbf{\href{#1}{#2}}{: #3 \vspace{-2pt}}
+    \textbf{\href{#1}{\small #2}}{: #3 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\projectSubheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\centerline{\textbf{\href{}{\LARGE Ninaad Bhan}} } \\
+
+%\href{mailto:rajavelu.1@osu.edu}{rajavelu.1@osu.edu} \textbulltet 
+ 
+\centerline{\href{mailto:ninobhan@gmail.com}{ninobhan@gmail.com}  \textbullet\, +91 9680731391 }
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Manipal University Jaipur}{Jaipur, India}
+      {Bachelor of Technology in Mechatronics Engineering;  GPA: 7.42 /10.0}{July 2014 -- June 2018}
+  \resumeSubHeadingListEnd
+
+% Need to do this
+%  \resumeSubHeadingListStart
+%    \resumeSubItem{QuantSoftware Toolkit}
+%      {Open source python library for financial data analysis and machine learning for finance.}
+%    \resumeSubItem{Github Visualization}
+%      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+%    \resumeSubItem{Recommendation System}
+%      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+%    \resumeSubItem{Mac Setup}
+%      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+%  \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Python (scikit-learn, NumPy, SciPy, Pandas, OpenCV), C++, R}
+    \resumeSubItem{Softwares}{MATLAB \& Simulink, LabVIEW, Creo, Keil}
+    \resumeSubItem{Developement Board}{Arduino, Rspberry Pi}
+    \resumeSubItem{Academic}{Pneumatic \& Hydraulics, Fuzzy Logic, Artificial Neural Systems, Sensors, Robotics, Microelectromechanical Systems, Microcontrollers \& microprocessors, Composite Materials, Control Systems} 
+    
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+
+	\resumeSubHeadingListStart
+
+%% 3D Printer
+		\projectSubheading
+ 		{3D Printer}{}
+			\resumeItemListStart
+				\item
+				{\textbf{Designing and modelling} of square-shaped and cantilever structured 3D printer using \textbf{Creo.}}
+				\item
+				{\textbf{Circuit designing} of sensors and actuators using microcontroller Arduino Mega and MKS gen controller}
+				\item
+				{Coding and implemantation of \textbf{firmware} using parameters like vibration, temprature, etc.}
+		      \resumeItemListEnd
+ 	
+%% LEGO LabVIEW Projects
+		\projectSubheading
+ 		{LEGO LabVIEW Projects}{}
+			\resumeItemListStart
+				\item
+				{Optimized line follower with \textbf{single infrared sensor} using \textbf{PID Programming}.}
+				\item 
+				{Spying self-balancing robot using \textbf{gyroscope sensor} and \textbf{PID Programming} with \textbf{camera}.}
+		      \resumeItemListEnd
+
+%%  Autonomous Robotic Arm
+		\projectSubheading
+ 		{Autonomous Robotic Arm}{}
+			\resumeItemListStart
+				\item 
+				{Designed, hand crafted and programmed an autonomous robotic arm with \textbf{3 degrees of freedom with 5 finger clampers} using \textbf{servo motors} and \textbf{sensors} with \textbf{Arduino Environment}.}
+		      \resumeItemListEnd
+		      
+%%	PLC Simulation
+	   \projectSubheading
+	   {PLC Simulation}{}
+	      \resumeItemListStart
+	          \item 
+	          {Design and simulation of Hydro power plant using Seimens PLC.}   
+          \resumeItemListEnd
+          
+           
+	\resumeSubHeadingListEnd
+
+
+
+%--------Research Papers------------
+\section{Research Papers}
+  \resumeSubHeadingListStart
+    \item{\textbf{Importance of Cantilever shaped Polar 3D}, \textit{The International Conference of Start-Up Ventures: Technology Development and Future Strategies (SV-TDFS), 2018}}
+    \item{\textbf{Importance of Cantilever shaped Polar 3D printers as new standard for desktop 3D printers}, \textit{Submitted for publishing}}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+%% Magal Tech Engg. Pvt. Ltd.
+\resumeSubheading
+{Magal Tech. Engg. Pvt. Ltd}{Chennai, India}
+{Intern}{June 2017 - July 2017}
+\resumeItemListStart
+\item
+{Indepth study of the \textbf{Automated Thermostat Calibrating Machine} and presenting ideas for improvement.}
+\resumeItemListEnd
+
+
+%% ViodWorks
+\resumeSubheading
+{VoidWorks(Purinto)}{College-Level Startup, Manipal University}
+{Co-Founder}{Feb. 2018 - Jun.2018}
+\resumeItemListStart
+\item
+{3D printing services for the university and the regional market.}
+\item 
+{Tackling common problems related to \textbf{filament re-utilization} and \textbf{3D object scanning}.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+\end{document}
